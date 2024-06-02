@@ -4,25 +4,25 @@ This repository contains files for creating and testing a Convolution IP Core us
 
 ## Contents
 
-- *Vitis Folder*: Contains .cpp files to create the Convolution IP Core.
-- *Jupyter Notebook Folder*: Contains .hwh, .tcl, and .bit files generated in Vivado, as well as test image files.
+- *Vitis Folder*: Contains `.cpp` files to create the Convolution IP Core.
+- *Jupyter Notebook Folder*: Contains `.hwh`, `.tcl`, and `.bit` files generated in Vivado, as well as test image files.
 - *Test Image Files*: Sample images for testing the Convolution IP Core.
 
 ## Usage
 
 ### 1. Creating the Convolution IP Core in Vitis
 
-1. Place the .cpp files in the Vitis folder.
+1. Place the `.cpp` files in the Vitis folder.
 2. Use these files to create an IP core.
 3. Utilize the created IP core to design the block diagram.
-4. Generate the .hwh, .tcl, and .bit files.
+4. Generate the `.hwh`, `.tcl`, and `.bit` files.
 
 ### 2. Using Pre-generated Files
 
 If you prefer to use the pre-generated files, follow these steps:
 
-1. Copy the included .hwh, .tcl, and .bit files.
-2. Place these files in the <a href="/xilinx/pynq/overlays" style="color:blue;">/xilinx/pynq/overlays</a> directory on your PYNQ board.
+1. Copy the included `.hwh`, `.tcl`, and `.bit` files.
+2. Place these files in the `/xilinx/pynq/overlays` directory on your PYNQ board.
 
 ### 3. Running the Test Cases
 
@@ -38,5 +38,5 @@ If you prefer to use the pre-generated files, follow these steps:
 - Change the path name in the PS + PL source code, and PS for the image you want to process.
 - Pixels here are in `char` format, so the kernel in `float` format can lead to undesirable results.
 ## RTL guide note
-- Add `muladdtree3x3.v`, `line_buffer.v` in your project, choose **project manager** > Add sources > Add or create design sources.
-- Add `combined_tb.v` in your project, choose  **project manager** > Add sources > Add or create design sources.
+- Add `muladdtree3x3.v`, `line_buffer.v` in your project, choose `project manager > Add sources > Add or create design sources`.
+- Add `combined_tb.v` in your project, choose  `project manager > Add sources > Add or create design sources`.
