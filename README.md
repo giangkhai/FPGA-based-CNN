@@ -22,7 +22,7 @@ This repository contains files for creating and testing a Convolution IP Core us
 If you prefer to use the pre-generated files, follow these steps:
 
 1. Copy the included .hwh, .tcl, and .bit files.
-2. Place these files in the /xilinx/pynq/overlays directory on your PYNQ board.
+2. Place these files in the <a href="/xilinx/pynq/overlays" style="color:blue;">/xilinx/pynq/overlays</a> directory on your PYNQ board.
 
 ### 3. Running the Test Cases
 
@@ -30,10 +30,13 @@ If you prefer to use the pre-generated files, follow these steps:
 2. Run the notebooks to test the Convolution IP Core using the included test images.
 3. Observe the results to verify the functionality.
 
-## TIPS
+## Tips
 - You can add new images with any name in the `image` folder.
 - You can change the 3x3 kernel in the path. However, with the limitation of 1 pixel represented by 8 bits, the pixel value ranges from 0 to 255. If it exceeds these bounds, the pixel will automatically update to the nearest boundary value.
 
-## NOTE
+## Note
 - Change the path name in the PS + PL source code, and PS for the image you want to process.
 - Pixels here are in `char` format, so the kernel in `float` format can lead to undesirable results.
+## RTL guide note
+- Add `muladdtree3x3.v`, `line_buffer.v` in your project, choose **project manager** > Add sources > Add or create design sources.
+- Add `combined_tb.v` in your project, choose  **project manager** > Add sources > Add or create design sources.
