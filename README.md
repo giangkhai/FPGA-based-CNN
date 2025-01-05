@@ -40,3 +40,5 @@ If you prefer to use the pre-generated files, follow these steps:
 ## RTL guide note
 - Add `muladdtree3x3.v`, `line_buffer.v` in your project, choose `project manager > Add sources > Add or create design sources`.
 - Add `combined_tb.v` in your project, choose  `project manager > Add sources > Add or create design sources`.
+  ## Contributors
+- Project by: Khai Giang-Mien and Nguyen Phan-Nguyen-Khoi
